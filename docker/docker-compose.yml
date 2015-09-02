@@ -25,7 +25,7 @@ webdata:
     - /etc/localtime:/etc/localtime:ro
 
 web:
-  image: sfi/boilerplatedistr:latest
+  image: dimaip/boilerplatedistr:latest
   ports:
     - '80'
   links:
