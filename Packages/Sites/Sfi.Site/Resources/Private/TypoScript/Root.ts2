@@ -1,14 +1,15 @@
+include: NodeTypes/**/*.ts2
+
 #This is a default page object. It's being extended and never used directly.
-prototype(Sfi.Site:Page) >
-prototype(Sfi.Site:Page) < prototype(TYPO3.Neos:Page) {
+prototype(Sfi.Site:Root) < prototype(TYPO3.Neos:Page) {
 	head {
 		titleTag.content = ${String.stripTags(q(node).property('title'))}
 		stylesheets.site = TYPO3.TypoScript:Template {
-			templatePath = 'resource://Sfi.Site/Private/Templates/SharedResources.html'
+			templatePath = 'resource://Sfi.Site/Private/Partials/SharedResources.html'
 			sectionName = 'stylesheets'
 		}
 		javascripts.headScripts = TYPO3.TypoScript:Template {
-			templatePath = 'resource://Sfi.Site/Private/Templates/SharedResources.html'
+			templatePath = 'resource://Sfi.Site/Private/Partials/SharedResources.html'
 			sectionName = 'headScripts'
 		}
 	}
@@ -16,7 +17,7 @@ prototype(Sfi.Site:Page) < prototype(TYPO3.Neos:Page) {
 	bodyTag.attributes.class = 'Page'
 	bodyTag.attributes.id = ${'Page-' + q(node).property('_name')}
 	body {
-		templatePath = 'resource://Sfi.Site/Private/Templates/Pages/Page.html'
+		templatePath = 'resource://Sfi.Site/Private/Templates/Pages/Root.html'
 		partialRootPath = 'resource://Sfi.Site/Private/Partials'
 		layoutRootPath = 'resource://Sfi.Site/Private/Layouts'
 
@@ -33,7 +34,8 @@ prototype(Sfi.Site:Page) < prototype(TYPO3.Neos:Page) {
 		}
 
 		javascripts.bodyScripts = TYPO3.TypoScript:Template {
-			templatePath = 'resource://Sfi.Site/Private/Templates/SharedResources.html'
+			templatePath = 'resource://Sfi.Site/Private/Partials/SharedResources.html'
+			partialRootPath = 'resource://Sfi.Site/Private/Partials'
 			sectionName = 'bodyScripts'
 		}
 	}
@@ -42,7 +44,7 @@ prototype(Sfi.Site:Page) < prototype(TYPO3.Neos:Page) {
 root.fallbackPage {
 	@position = 'before default'
 	condition = TRUE
-	type = 'Sfi.Site:Page'
+	type = 'Sfi.Site:Root'
 }
 
 # Disable stupid layout mechanism

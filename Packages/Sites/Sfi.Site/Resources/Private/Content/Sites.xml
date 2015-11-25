@@ -3,7 +3,7 @@
  <site name="Site" state="1" siteResourcesPackageKey="Sfi.Site" siteNodeName="site">
   <nodes formatVersion="2.0">
    <node nodeName="site">
-    <variant workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
+    <variant workspace="live" nodeType="Sfi.Site:Page" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
      <dimensions>
      
      </dimensions>

@@ -1,0 +1,8 @@
+'TYPO3.Neos.NodeTypes:Page':
+  abstract: TRUE
+
+'Sfi.Site:Page':
+  superTypes:
+    - 'TYPO3.Neos.NodeTypes:Page'
+  ui:
+    label: 'Обычная страница'
