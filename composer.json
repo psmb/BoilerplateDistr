@@ -12,7 +12,7 @@
         "typo3/neos-kickstarter": "~2.1.0",
         "typo3/imagine": "@dev",
         "typo3/form": "@dev",
-        "typo3/setup": "@dev",
+        "typo3/setup": "@dev"
     },
     "scripts": {
         "post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
