@@ -5,9 +5,6 @@
     "require": {
         "typo3/neos": "*"
     },
-    "suggest": {
-        "typo3/neos-seo": "*"
-    },
     "autoload": {
         "psr-0": {
             "Sfi\\Site": "Classes"

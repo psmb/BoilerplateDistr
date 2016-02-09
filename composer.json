@@ -7,23 +7,12 @@
         "bin-dir": "bin"
     },
     "require": {
-        "typo3/neos": "2.0.*",
-        "typo3/neos-nodetypes": "2.0.*",
-        "typo3/neos-kickstarter": "2.0.*",
-
-        "typo3/neos-seo": "~1.0",
-        "typo3/imagine": "~2.0",
-        "typo3/form": "~2.0",
-        "typo3/setup": "~2.0"
-    },
-    "require-dev": {
-        "typo3/buildessentials": "3.0.*@rc",
-        "mikey179/vfsstream": "1.5.*",
-        "phpunit/phpunit": "4.6.*",
-        "flowpack/behat": "dev-master"
-    },
-    "suggest": {
-        "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
+        "typo3/neos": "~2.1.0",
+        "typo3/neos-nodetypes": "~2.1.0",
+        "typo3/neos-kickstarter": "~2.1.0",
+        "typo3/imagine": "@dev",
+        "typo3/form": "@dev",
+        "typo3/setup": "@dev",
     },
     "scripts": {
         "post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
