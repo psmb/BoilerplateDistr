@@ -1,9 +1,9 @@
 include: NodeTypes/**/*.ts2
 
-#This is a default page object. It's being extended and never used directly.
+# This is a default page object.
 prototype(Sfi.Site:Root) < prototype(TYPO3.Neos:Page) {
 	head {
-		titleTag.content = ${String.stripTags(q(node).property('title'))}
+		titleTag.content = ${String.stripTags(q(node).property('title')) + ' | ' + Translation.translate('common.sitetitle.short', null, [], null, 'Sfi.Site')}
 		stylesheets.site = TYPO3.TypoScript:Template {
 			templatePath = 'resource://Sfi.Site/Private/Partials/SharedResources.html'
 			sectionName = 'stylesheets'
@@ -13,11 +13,11 @@ prototype(Sfi.Site:Root) < prototype(TYPO3.Neos:Page) {
 			sectionName = 'headScripts'
 		}
 	}
-	htmlTag.attributes.lang="ru"
+	htmlTag.attributes.lang = ${Array.first(node.context.dimensions.language)}
 	bodyTag.attributes.class = 'Page'
 	bodyTag.attributes.id = ${'Page-' + q(node).property('_name')}
 	body {
-		templatePath = 'resource://Sfi.Site/Private/Templates/Pages/Root.html'
+		templatePath = 'resource://Sfi.Site/Private/Templates/Root.html'
 		partialRootPath = 'resource://Sfi.Site/Private/Partials'
 		layoutRootPath = 'resource://Sfi.Site/Private/Layouts'
 
