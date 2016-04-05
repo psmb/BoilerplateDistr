@@ -1,8 +1,8 @@
 # Boilerplate Neos distribution
 
-The idea of this repo is to serve as a boilerplate for all [Neos](https://neos.io) projects that we(https://psmb.github.io) start. It helps us to save _A LOT_ of times when kickstarting new Neos projects.
+The idea of this repo is to serve as a boilerplate for all [Neos](https://neos.io) projects that [we](https://psmb.github.io) start. It helps us to save _A LOT_ of times when kickstarting new Neos projects.
 
-**Don't use it directly, as it has a lot of code that is specific to our infrastructure! Rather clone and tune it for your own needs.**
+**WARNING: Don't use it directly, as it has a lot of code that is specific to our infrastructure! Rather clone and tune it for your own needs.**
 
 ## Workflow
 
