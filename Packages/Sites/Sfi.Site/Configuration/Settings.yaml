@@ -7,19 +7,19 @@ TYPO3:
       navigateComponent:
         nodeTree:
           loadingDepth: 1
-  TYPO3CR:
-    contentDimensions:
-      'language':
-        default: 'ru'
-        defaultPreset: 'ru'
-        label: 'Language'
-        icon: 'icon-language'
-        presets:
-          'ru':
-            label: 'Russian'
-            values: ['ru']
-            uriSegment: ''
-          'en':
-            label: 'English'
-            values: ['en']
-            uriSegment: 'en'
+  # TYPO3CR:
+  #   contentDimensions:
+  #     'language':
+  #       default: 'ru'
+  #       defaultPreset: 'ru'
+  #       label: 'Language'
+  #       icon: 'icon-language'
+  #       presets:
+  #         'ru':
+  #           label: 'Russian'
+  #           values: ['ru']
+  #           uriSegment: ''
+  #         'en':
+  #           label: 'English'
+  #           values: ['en']
+  #           uriSegment: 'en'
