@@ -7,12 +7,15 @@
         "bin-dir": "bin"
     },
     "require": {
-        "typo3/neos": "~2.1.0",
-        "typo3/neos-nodetypes": "~2.1.0",
-        "typo3/neos-kickstarter": "~2.1.0",
+        "neos/neos-development-collection": "2.2.x-dev",
+        "neos/flow-development-collection": "@dev",
+
+        "typo3/party": "@dev",
+        "typo3/neos-seo": "@dev",
         "typo3/imagine": "@dev",
         "typo3/form": "@dev",
-        "typo3/setup": "@dev"
+        "typo3/setup": "@dev",
+        "flowpack/neos-frontendlogin": "@dev"
     },
     "scripts": {
         "post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
