@@ -1,0 +1,14 @@
+prototype(Psmb.NodeTypes:Text) {
+  attributes.class = 'RteText'
+}
+prototype(Psmb.NodeTypes:Headline) {
+  attributes.class = 'RteText'
+}
+prototype(Psmb.NodeTypes:Image) {
+  attributes.class = 'Figure'
+  content.caption.attributes.class = 'Figure-caption'
+}
+
+prototype(TYPO3.TypoScript:Collection) {
+	itemName = 'node'
+}
