@@ -1,0 +1,20 @@
+$grid-column-gutter: (
+	small: 12px,
+	medium: 24px,
+);
+
+@import '../node_modules/foundation-sites/scss/foundation';
+@import 'reset';
+@import 'Base/**/*.scss';
+@import 'Modules/**/*.scss';
+@import 'overrideVendor';
+
+@include foundation-flex-grid;
+@include foundation-flex-video;
+@include foundation-visibility-classes;
+
+body {
+	color: $gray-dark;
+	font-family: $fontFamily-main;
+	font-size: 100%;
+}

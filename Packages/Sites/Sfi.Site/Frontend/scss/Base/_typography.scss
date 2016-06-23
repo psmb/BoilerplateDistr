@@ -1,0 +1,20 @@
+.H0 {
+	@include breakpoint(medium up) {
+		font-size: rem-calc(26);
+	}
+	@include breakpoint(large up) {
+		font-size: rem-calc(35);
+	}
+	line-height: 1.2;
+	font-weight: bold;
+}
+
+.H1 {
+}
+
+.Paragraph {
+	font-size: rem-calc(18);
+}
+
+.ParagraphAlt {
+}

@@ -1,0 +1,40 @@
+.overflow-hidden,
+.clearfix {
+	overflow: hidden !important;
+}
+
+.float-left,
+.left {
+	float: left !important;
+}
+
+.float-right,
+.right {
+	float: right !important;
+}
+
+.fixedWidth {
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.display-flex {
+	display: flex;
+}
+
+.contentPadding {
+	padding-right: $u;
+	padding-left: $u;
+	@include breakpoint(medium up) {
+		padding-right: 2*$u;
+		padding-left: 2*$u;
+  }
+}
+
+.position-relative {
+	position: relative;
+}
