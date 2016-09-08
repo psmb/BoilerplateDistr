@@ -11,6 +11,8 @@ TYPO3:
       navigateComponent:
         nodeTree:
           loadingDepth: 1
+        structureTree:
+          loadingDepth: 0
   # TYPO3CR:
   #   contentDimensions:
   #     'language':
