@@ -1,5 +1,7 @@
 TYPO3:
   Flow:
+    session:
+      inactivityTimeout: 604800
     i18n:
       defaultLocale: 'ru'
   Neos:
