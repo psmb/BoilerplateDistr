@@ -21,7 +21,7 @@ dbdata:
     - /var/lib/mysql
 
 db:
-  image: million12/mariadb:latest
+  image: million12/mariadb:10.2
   expose:
     - '3306'
   volumes_from:
@@ -37,7 +37,7 @@ webdata:
     - ./Persistent:/data/www/shared/Data/Persistent
 
 web:
-  image: dimaip/neos-bare:latest
+  image: dimaip/neos-bare:2.0
   ports:
     - '80'
   links:
