@@ -1,4 +1,4 @@
 prototype(Sfi.Site:Header) < prototype(T:Template) {
-	templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Header.html'
+	templatePath = 'resource://Sfi.Site/Private/Fusion/Objects/Header.html'
 	mainMenu = Sfi.Site:MainMenu
 }

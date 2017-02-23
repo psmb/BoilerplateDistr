@@ -1,5 +1,5 @@
 prototype(Sfi.Site:Body) < prototype(T:Template) {
-	templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Body.html'
+	templatePath = 'resource://Sfi.Site/Private/Fusion/Objects/Body.html'
 	header = Sfi.Site:Header
 	main = PrimaryContent {
 		renderByType {

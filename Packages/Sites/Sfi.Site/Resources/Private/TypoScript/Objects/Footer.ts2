@@ -1,3 +1,0 @@
-prototype(Sfi.Site:Footer) < prototype(T:Template) {
-	templatePath = 'resource://Sfi.Site/Private/TypoScript/Objects/Footer.html'
-}
