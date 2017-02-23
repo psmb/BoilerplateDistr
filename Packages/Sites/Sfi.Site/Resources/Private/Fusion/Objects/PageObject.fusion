@@ -1,4 +1,4 @@
-prototype(Sfi.Site:Page) < prototype(Page) {
+prototype(Sfi.Site:PageObject) < prototype(Page) {
 	head {
 		titleTag.content = ${String.stripTags(q(node).property('title')) + ' | ' + Translation.translate('global.shorttitle', null, [], null, 'Sfi.Site')}
 		miscStuff = ${'
@@ -15,7 +15,8 @@ prototype(Sfi.Site:Page) < prototype(Page) {
 			}
 		}
 	}
-	htmlTag.attributes.lang = ${Array.first(node.context.dimensions.language)}
+	# TODO: find out why this is broken
+	#htmlTag.attributes.lang = ${Array.first(node.context.dimensions.language)}
 	bodyTag.attributes.class = 'Page'
 	bodyTag.attributes.id = ${'Page-' + q(node).property('_name')}
 
