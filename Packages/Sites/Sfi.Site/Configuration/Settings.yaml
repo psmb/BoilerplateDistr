@@ -1,5 +1,10 @@
 
-TYPO3:
+Neos:
+  Flow:
+    session:
+      inactivityTimeout: 604800
+    i18n:
+      defaultLocale: ru
   Neos:
     typoScript:
       autoInclude:
@@ -11,9 +16,3 @@ TYPO3:
           loadingDepth: 1
         structureTree:
           loadingDepth: 0
-Neos:
-  Flow:
-    session:
-      inactivityTimeout: 604800
-    i18n:
-      defaultLocale: ru
