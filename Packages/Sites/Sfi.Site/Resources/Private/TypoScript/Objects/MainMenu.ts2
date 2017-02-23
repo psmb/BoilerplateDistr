@@ -1,6 +1,6 @@
 prototype(Sfi.Site:MainMenu) < prototype(T:Collection) {
 	@process.tmpl = ${'<ul class="MainMenu">' + value + '</ul>'}
-	collection = ${q(site).children('[instanceof TYPO3.Neos:Document]').get()}
+	collection = ${q(site).children('[instanceof Neos.Neos:Document]').get()}
 	itemRenderer = T:Tag {
 		tagName = 'li'
 		attributes.class = 'MainMenu-item'
