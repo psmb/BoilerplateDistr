@@ -1,5 +1,5 @@
 {
-	"name": "typo3/boilerplate-distribution",
+	"name": "psmb/boilerplate-distribution",
 	"description" : "Boilerplate Distribution",
 	"license": "GPL-3.0+",
 	"config": {
@@ -7,31 +7,37 @@
 		"bin-dir": "bin"
 	},
 	"require": {
-		"neos/neos-development-collection": "2.2.x-dev",
-		"neos/flow-development-collection": "@dev",
+		"neos/neos-development-collection": "3.0.x-dev",
+		"neos/flow-development-collection": "4.0.x-dev",
+		"neos/party": "~4.0.0",
+		"neos/imagine": "~3.0.0",
+		"neos/form": "~4.0.0",
+		"neos/setup": "~4.0.0",
 
-		"typo3/party": "@dev",
-		"typo3/neos-seo": "@dev",
-		"typo3/imagine": "@dev",
-		"typo3/form": "@dev",
-		"typo3/setup": "@dev",
-		"flowpack/neos-frontendlogin": "@dev",
+		"neos/googleanalytics": "~2.0.0",
+		"neos/redirecthandler": "@dev",
+		"neos/redirecthandler-databasestorage": "@dev",
+		"neos/redirecthandler-neosadapter": "@dev",
 
+		"psmb/mediaquery": "~2.0",
+		"psmb/mapreduce": "~2.0",
 		"flowpack/listable": "*",
 		"sfi/youtube": "*",
-		"psmb/term": "@dev",
-		"psmb/nodetypes": "@dev",
-		"psmb/createnodebutton": "@dev"
+		"sfi/grid": "*",
+		"psmb/term": "*",
+		"psmb/nodetypes": "*",
+		"psmb/createnodebutton": "*",
+		"opsdev/cache-breaker": "^2.0"
 	},
 	"extra": {
 		"neos": {
-			"default-disabled-packages": ["flowpack/neos-frontendlogin", "typo3/neos-nodetypes"]
+			"default-disabled-packages": ["flowpack/neos-frontendlogin", "neos/neos-nodetypes"]
 		}
 	},
 	"scripts": {
-		"post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
-		"post-install-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
-		"post-package-update":"TYPO3\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
-		"post-package-install":"TYPO3\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
+		"post-update-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+		"post-install-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+		"post-package-update": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+		"post-package-install": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
 	}
 }
