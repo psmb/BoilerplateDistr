@@ -1,5 +1,5 @@
 prototype(Sfi.Site:StandardPage)>
-prototype(Sfi.Site:StandardPage) < prototype(T:Array) {
+prototype(Sfi.Site:StandardPage) < prototype(Neos.Fusion:Array) {
 	main = Neos.Neos:ContentCollection {
 		nodePath = 'main'
 	}

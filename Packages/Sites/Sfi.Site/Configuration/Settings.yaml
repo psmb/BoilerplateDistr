@@ -16,3 +16,21 @@ Neos:
     fusion:
       autoInclude:
         Sfi.Site: true
+  ContentRepository:
+    contentDimensions:
+      language:
+        default: ru
+        defaultPreset: ru
+        label: Language
+        icon: icon-language
+        presets:
+          ru:
+            label: Russian
+            values:
+              - ru
+            uriSegment: ''
+          en:
+            label: English
+            values:
+              - en
+            uriSegment: en

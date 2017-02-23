@@ -2,23 +2,24 @@
 <root>
  <site name="Site" state="1" siteResourcesPackageKey="Sfi.Site" siteNodeName="site">
   <nodes formatVersion="2.0">
-   <node nodeName="site">
-    <variant workspace="live" nodeType="Sfi.Site:StandardPage" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-
-     </dimensions>
+   <node identifier="e9bc7d53-ca3b-464f-afc5-44acbea69ada" nodeName="site">
+    <variant sortingIndex="100" workspace="live" nodeType="Sfi.Site:StandardPage" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
      <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2017-02-23T07:59:01+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2017-02-23T08:06:02+00:00</lastModificationDateTime>
      <properties>
       <title __type="string">Home</title>
       <uriPathSegment __type="string">home</uriPathSegment>
      </properties>
     </variant>
-    <node nodeName="main">
-     <variant workspace="live" nodeType="Neos.Neos:ContentCollection" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-
-      </dimensions>
+    <node identifier="9f200f29-7fb0-453e-a466-1602376886d7" nodeName="main">
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
       <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2017-02-23T07:59:01+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2017-02-23T08:06:02+00:00</lastModificationDateTime>
+      <properties/>
      </variant>
     </node>
    </node>

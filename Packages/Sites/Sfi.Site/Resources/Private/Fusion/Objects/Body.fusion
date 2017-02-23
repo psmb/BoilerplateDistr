@@ -1,4 +1,4 @@
-prototype(Sfi.Site:Body) < prototype(T:Template) {
+prototype(Sfi.Site:Body) < prototype(Neos.Fusion:Template) {
 	templatePath = 'resource://Sfi.Site/Private/Fusion/Objects/Body.html'
 	header = Sfi.Site:Header
 	main = PrimaryContent {
