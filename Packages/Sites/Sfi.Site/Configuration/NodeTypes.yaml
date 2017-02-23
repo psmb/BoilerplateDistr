@@ -1,8 +1,9 @@
+
 'Sfi.Site:StandardPage':
   superTypes:
-    - 'TYPO3.Neos:Document'
+    'Neos.Neos:Document': true
   childNodes:
     main:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
   ui:
     label: 'Обычная страница'

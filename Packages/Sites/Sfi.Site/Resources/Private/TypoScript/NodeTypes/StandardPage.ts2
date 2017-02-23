@@ -1,6 +1,0 @@
-prototype(Sfi.Site:StandardPage)>
-prototype(Sfi.Site:StandardPage) < prototype(T:Array) {
-	main = TYPO3.Neos:ContentCollection {
-		nodePath = 'main'
-	}
-}

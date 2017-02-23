@@ -1,0 +1,12 @@
+include: Objects/**/*.fusion
+include: NodeTypes/**/*.fusion
+include: Override.fusion
+
+root.thePage {
+	@position = 'before default'
+	condition = TRUE
+	type = 'Sfi.Site:PageObject'
+}
+
+# Disable stupid layout mechanism
+root.layout>
