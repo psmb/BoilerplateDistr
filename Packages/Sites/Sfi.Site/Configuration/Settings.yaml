@@ -1,33 +1,19 @@
+
 TYPO3:
-  Flow:
-    session:
-      inactivityTimeout: 604800
-    i18n:
-      defaultLocale: 'ru'
   Neos:
     typoScript:
       autoInclude:
-        'Sfi.Site': TRUE
+        Sfi.Site: true
     userInterface:
-      defaultLanguage: 'ru'
+      defaultLanguage: ru
       navigateComponent:
         nodeTree:
           loadingDepth: 1
         structureTree:
           loadingDepth: 0
-  # TYPO3CR:
-  #   contentDimensions:
-  #     'language':
-  #       default: 'ru'
-  #       defaultPreset: 'ru'
-  #       label: 'Language'
-  #       icon: 'icon-language'
-  #       presets:
-  #         'ru':
-  #           label: 'Russian'
-  #           values: ['ru']
-  #           uriSegment: ''
-  #         'en':
-  #           label: 'English'
-  #           values: ['en']
-  #           uriSegment: 'en'
+Neos:
+  Flow:
+    session:
+      inactivityTimeout: 604800
+    i18n:
+      defaultLocale: ru
